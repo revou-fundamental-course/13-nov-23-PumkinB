@@ -1,0 +1,223 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
+  
+  .navigation-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: min-content;
+      background-color: transparent;
+      padding: 5px;
+    }
+    
+    .navigation-header a img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    
+    .navigation-header {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .navigation a {
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      background-color: #C7DCA7;
+      border: 2px solid #C7DCA7;
+      border-radius: 10px;
+      padding: 8px;
+    }
+    
+    .title-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px, 10px;
+      color: #FFC436;
+      font-size: 20px;
+    }
+    
+    #main-section {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .review-section {
+      height: 350px;
+      width: auto;
+      overflow: hidden;
+    }
+  
+    .impression {
+      color: #FFC436;
+      font-size: 30px;
+      
+    }
+    
+    #slider-container {
+      height: 300px;
+      width: 500px;
+      margin: 25px auto;
+      overflow: hidden;
+      border: 2px solid black;
+      border-radius: 2px;
+    }
+    
+    #slider {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .message-us {
+      height: 400px;
+      width: 100%;
+      display: flex;
+      background-color: ghostwhite;
+      border-radius: 8px;
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+    .input-message-us {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .primary-button {
+      height: 30px;
+      width: 50%;
+      border: 1px solid lightgrey;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: lightgreen;
+    }
+    
+    button:active {
+      transform: translateY(2px);
+    }
+    
+    .form-wrapper {
+      margin-bottom: 20px;
+    }
+    
+    .contact-us-header {
+      margin-bottom: 10px;
+    }
+    
+    .input-box-text {
+      border: 1px solid lightgrey;
+      height: 30px;
+      width: 50%;
+      padding: 0px 5px;
+    }
+    
+    .flex-item {
+      flex: 1;
+    }
+  
+    .error-message {
+      color: red;
+      font-size: 10px;
+    }
+  
+    #success {
+      color: #42bf3f;
+    }
+  
+  
+  @media screen and (max-width: 600px) {
+      #main-section {
+          display: flex;
+          flex-direction: column;
+      }
+      .input-box-text {
+          border: 0.0625rem solid lightgrey;
+          height: 1.875rem;
+          width: 18.75rem;
+          padding: 0px 0.313rem;
+      }
+      
+      .navigation a {
+          margin: 0;
+          padding: 0;
+          gap: 10px;
+      }
+  
+      #slider-container {
+        height: 10rem;
+        width: 15.625rem;
+        margin: 25px auto;
+        overflow: hidden;
+        border: 2px solid black;
+      }
+  
+      /* galaxy fold layar */
+      @media only screen and (min-width: 280px) {
+        #main-section {
+          display: flex;
+          flex-direction: column;
+      }
+      .input-box-text {
+          border: 0.0625rem solid lightgrey;
+          height: 1.875rem;
+          width: 8.75rem;
+          padding: 0px 0.313rem;
+      }
+      
+      .navigation a {
+          margin: 0;
+          padding: 0;
+          gap: 10px;
+      }
+  
+      #slider-container {
+        height: 10rem;
+        width: 15.625rem;
+        margin: 25px auto;
+        overflow: hidden;
+        border: 2px solid black;
+      }
+      }
+  
+      @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      #main-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-box-text {
+        border: 0.0625rem solid lightgrey;
+        height: 1.875rem;
+        width: 18.75rem;
+        padding: 0px 0.313rem;
+    }
+    
+    .navigation a {
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
+  
+    #slider-container {
+      height: 10rem;
+      width: 15.625rem;
+      margin: 25px auto;
+      overflow: hidden;
+      border: 2px solid black;
+    }
+  }
+  
+  }
