@@ -16,12 +16,13 @@
       <a href="#">Call Us</a>
     </nav>
   </section>
-
+  <hr>
   <section class="title-header">
     <h2>Your Trusted Travel Agent's</h2>
     <h4>Your happiness is our happiness</h4>
   </section>
 </header>
+<hr>
 
 <main id="main-section">
   <section class="flex-item">
@@ -59,7 +60,7 @@
       <div class="form-wrapper">
         <label for="travel-input">What are you interested in?</label>
         <select class="input-box-text" name="travel-input" id="travel-input">
-          <option value="selected disabled hidden"></option>
+          <option disabled selected id="default-select" hidden value="">Select Option</option>
           <option value="japan">Japan</option>
           <option value="australia">Australia</option>
           <option value="china">China</option>
@@ -69,7 +70,7 @@
         <div id="option-error" class="error-message"></div>
       </div>
       <div>
-      <button type="submit" class="primary-button" onclick="alert('Terima Kasih, kami akan menghubungi anda lewat email');">Send</button>
+      <button type="submit" class="primary-button">Send</button>
       <p id="success"></p>
     </div>
     </form>

@@ -59,7 +59,7 @@ window.onload = function () {
       emailInput.classList.add("error-border");
     }
   
-    if (travelInput.value.trim().length < 1 || travelInput.value === "selected disabled hidden") {
+    if (travelInput.value.trim().length < 1 || travelInput.value === "default-select") {
       errorNodes[2].innerText = "Please select an option";
       travelInput.classList.add("error-border");
     }
@@ -83,3 +83,8 @@ window.onload = function () {
     let pattern = /\S+@\S+\.\S+/;
     return pattern.test(email);
   }
+
+
+  
+  
+
